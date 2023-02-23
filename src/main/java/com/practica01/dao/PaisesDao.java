@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 package com.practica01.dao;
 
-/**
- *
- * @author Josseline Jiménez
- */
-public interface PaisesDao {
+import com.practica01.domain.Pais;
+import org.springframework.data.repository.CrudRepository;
+
+
+public interface PaisesDao extends  CrudRepository<Pais, Long>{
     
 }
