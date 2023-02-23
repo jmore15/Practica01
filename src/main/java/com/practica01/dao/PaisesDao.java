@@ -1,13 +1,13 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package domain;
+package com.practica01.dao;
 
 /**
  *
  * @author Josseline Jiménez
  */
-public class Pais {
+public interface PaisesDao {
     
 }
