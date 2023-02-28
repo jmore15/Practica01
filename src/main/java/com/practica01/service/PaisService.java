@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package com.practica01.service;
 
-/**
- *
- * @author Josseline Jiménez
- */
+import com.practica01.domain.Pais;
+import java.util.List;
+import ch.qos.logback.core.net.server.Client;
+
 public interface PaisService {
-    
+
+    public List<Pais> getPaises();
+
+    public Pais getPais(Pais pais);
+
+    public void save(Pais pais);
+
+    public void delete(Pais pais);
+
 }

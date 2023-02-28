@@ -6,6 +6,36 @@
         <link href="css/estilo1.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>Tabla de países</div>
+        <header th:replace="layout/plantilla :: header"/>
+        <h2>Lista de Paises</h2>
+        <a th:href="@{/nuevoPais}">Nuevo Pais</a>
+        <br/>
+        <br/>
+        <div th:if="${paises != null and !paises.empty}">
+            <table border="1">
+                <thead>
+                <th>Nombre</th>
+                <th>Capital</th>
+                <th>Poblacion</th>
+                <th>Costas</th>
+                <th colspan="2">Acciones</th>
+                </thead>
+                <tbody>
+                    <tr th:each="item : ${paises}">
+                        <td th:text="${item.nombre}"></td>
+                        <td th:text="${item.capital}"></td>
+                        <td th:text="${item.poblacion}"></td>
+                        <td th:text="${item.costas}"></td>
+                        <td><a th:href="@{/modificarPais/} + ${item.idPais}">Modificar</a></td>
+                        <td><a th:href="@{/eliminarPais/} + ${item.idPais}">Eliminar</a></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div th:if="${paises == null or paises.empty}">
+            La lista de paises está vacía..
+        </div>
+        <footer th:replace="layout/plantilla :: footer"/>
     </body>
 </html>
