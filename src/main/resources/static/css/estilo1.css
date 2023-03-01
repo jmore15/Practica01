@@ -3,3 +3,23 @@
     font-family: sans-serif;
 }
 
+#encabezadotabla {
+    font-size: 20px;
+    background-color: darkblue;
+    color: gold;
+}
+
+#tablaPais tr:nth-child(odd) {
+    background-color: white;
+    color: darkblue;
+}
+
+#tablaPais tr:nth-child(even) {
+    background-color: darkblue;
+    color: white;
+}
+
+#tablaPais tr{
+    font-size: 25px;
+    font-weight: bolder;
+}
