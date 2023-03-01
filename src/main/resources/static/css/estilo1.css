@@ -1,25 +1,56 @@
-*{
-    background-color: whitesmoke;
-    font-family: sans-serif;
-}
+
 
 #encabezadotabla {
-    font-size: 20px;
-    background-color: darkblue;
-    color: gold;
+    font-size: 55px;
+    background-color: lightblue;
+    color: black;
 }
 
 #tablaPais tr:nth-child(odd) {
-    background-color: white;
-    color: darkblue;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    
 }
 
 #tablaPais tr:nth-child(even) {
-    background-color: darkblue;
-    color: white;
+    background-color: white;
+    color: black;
+    
 }
 
 #tablaPais tr{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bolder;
+    
 }
+
+*{
+    font-family: sans-serif;
+    
+}
+
+#contenido {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    height: 50%;
+    width: 60%;
+    background-color: whitesmoke;
+    color: black;
+    padding-left: 15px;
+    overflow: auto;
+    text-align: center;
+}
+
+#piePagina {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    background-color: aquamarine;
+    color: black;
+    padding-left: 15px;
+    text-align: center;
+}
+

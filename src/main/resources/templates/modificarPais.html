@@ -1,33 +1,36 @@
+<link href="../static/css/estilo1.css" rel="stylesheet" type="text/css"/>
 <html xmlns:th="http://www.thymeleaf.org">
- <head>
+    <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <header th:replace="layout/plantilla :: header"/>
-        <h1>Datos del Pais</h1>
-        <a th:href="@{/}">Regresar</a>
-        <br/>
-        <br/>
-        <form th:action="@{/guardarPais}"
-              method="POST"
-              th:object="${pais}">
-            <input type="hidden" name="idPais" th:field="*{idPais}"/>
-            <label for="nombre">Nombre:</label><br/>
-            <input type="text" id="nombre" name="nombre" th:field="*{nombre}"/><br/>
+    <section id="contenido">
+        <body>
+            <header th:replace="layout/plantilla :: header"/>
+            <h1>Datos del Pais</h1>
+            <a th:href="@{/}">Regresar</a>
+            <br/>
+            <br/>
+            <form th:action="@{/guardarPais}"
+                  method="POST"
+                  th:object="${pais}">
+                <input type="hidden" name="idPais" th:field="*{idPais}"/>
+                <label for="nombre">Nombre:</label><br/>
+                <input type="text" id="nombre" name="nombre" th:field="*{nombre}"/><br/>
 
-            <label for="capital">Capital:</label><br/>
-            <input type="text" id="capital" name="capital" th:field="*{capital}"/><br/>
+                <label for="capital">Capital:</label><br/>
+                <input type="text" id="capital" name="capital" th:field="*{capital}"/><br/>
 
-            <label for="poblacion">Poblacion:</label><br/>
-            <input type="text" id="poblacion" name="poblacion" th:field="*{poblacion}"/><br/>
+                <label for="poblacion">Poblacion:</label><br/>
+                <input type="text" id="poblacion" name="poblacion" th:field="*{poblacion}"/><br/>
 
-            <label for="costas">Costas:</label><br/>
-            <input type="text" id="costas" name="costas" th:field="*{costas}"/><br/><br/>
+                <label for="costas">Costas:</label><br/>
+                <input type="text" id="costas" name="costas" th:field="*{costas}"/><br/><br/>
 
-            <input type="submit" name="guadar" value="Guardar" />
-        </form>
-        <footer th:replace="layout/plantilla :: footer"/>
-    </body>
+                <input type="submit" name="guadar" value="Guardar" />
+            </form>
+            <footer th:replace="layout/plantilla :: footer"/>
+    </section>
+</body>
 </html>
